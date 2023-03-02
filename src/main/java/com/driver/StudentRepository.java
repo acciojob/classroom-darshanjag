@@ -33,8 +33,9 @@ public class StudentRepository {
         List<String> list = new ArrayList<>();
         if(teacherStudentDb.containsKey(teacher)){
             list =teacherStudentDb.get(teacher);
-            list.add(student);
+
         }
+        list.add(student);
         teacherStudentDb.put(teacher,list);
         teacherDb.get(teacher).setNumberOfStudents(list.size());
 
