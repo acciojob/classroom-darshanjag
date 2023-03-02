@@ -68,6 +68,7 @@ public class StudentRepository {
             }
         }
         teacherDb.clear();
+        teacherStudentDb.clear();
 
     }
 
